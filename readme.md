@@ -16,4 +16,4 @@ A Task
  * You can Login using 
     ---
     *Phone* : _923347272969_ and
-    *Password*: as _password_
+    *Password*: _password_
