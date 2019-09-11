@@ -1,0 +1,2 @@
+<a href="{{ route('user.edit' , ['id' => $id]) }}" title="Edit"><i class="fa fa-edit"></i></a>
+<a href="{{ route('user.assign' , ['id' => $id]) }}" title="Assign/Un Assign Projects"><i class="fa fa-link"></i></a>
