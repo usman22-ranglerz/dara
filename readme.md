@@ -10,7 +10,7 @@ A Task
 
 ## Database Setup
  * Make a database named dara in MySQL (phpmyadmin)
- * If you setup password or any other credentials you can change them in .env file (By Default username is root and password is '')
+ * If you have setup password or any other credentials or your database then you can change them in .env file (By Default username is root and password is '')
  * once above composer updated, run `php artisan migrate --seed`
  * run `php artisan serve` and access the project by localhost:8000 or any other port assigned after this command
  * You can Login using 
