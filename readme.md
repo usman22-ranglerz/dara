@@ -5,7 +5,7 @@ A Task
 # Installation
  * Clone this Repository
  * `cd` into it
- * run `cp env.example .env`
+ * run `cp .env.example .env`
  * run `composer update`
 
 ## Database Setup
