@@ -27,6 +27,21 @@ trait Monitorable
 		return $this->operation('updated' , $operator_id);
 	}
 
+	public function m_deleted($operator_id = null)
+	{
+		return $this->operation('deleted' , $operator_id);
+	}
+
+	public function m_restored($operator_id = null)
+	{
+		return $this->operation('restored' , $operator_id);
+	}
+
+	public function delete_operations($operator_id = null)
+	{
+		return Helper::deleteOperations($this , $operator_id);
+	}
+
 	public function operation(string $operation , $operator_id = null)
 	{
 		if(!is_null($operator_id)){
@@ -35,5 +50,7 @@ trait Monitorable
 		$data = Helper::transform($operation , $this);
 
 		Helper::save($data);
+
+		return $this;
 	}
 }

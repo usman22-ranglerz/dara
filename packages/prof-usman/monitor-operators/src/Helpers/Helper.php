@@ -144,4 +144,18 @@ class Helper
     	}
     	MonitorOperator::create($data);
     }
+
+    public static function deleteOperations($reference , $operator_id = null):bool
+    {
+    	$data['operateable_type'] = self::resolveType($reference);
+    	$data['operateable_id'] = self::resolveId($reference);
+
+    	if(!is_null($operator_id)){
+    		$data['operator_id'] = $operator_id;
+    	}
+
+    	MonitorOperator::where($data)->delete();
+
+    	return true;
+    }
 }

@@ -39,8 +39,8 @@ Route::group(['prefix' => 'admin' , 'middleware' => ['admin']] , function(){
 	Route::group(['prefix' => 'monitor'] , function(){
 		Route::get('/' , function(){
 			// MonitorJar::test();
-			$user = User::find(11);
-			dd($user->m_updated());
+			$user = User::find(10);
+			dd($user->delete_operations());
 		});
 	});
 });
