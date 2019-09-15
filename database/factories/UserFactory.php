@@ -17,18 +17,18 @@ use Faker\Generator as Faker;
 */
 
 $factory->define(User::class, function (Faker $faker) {
-    // return [
-    //     'name' => $faker->name,
-    //     'phone' => $faker->email,
-    //     'is_admin' => 0,
-    //     'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
-    //     'remember_token' => Str::random(10),
-    // ];
     return [
-        'name' => 'Usman Iqbal',
-        'phone' => '923347272969',
-        'type' => 'admin',
-        'password' => 'password', // password
+        'name' => $faker->name,
+        'phone' => $faker->email,
+        'type' => 'user',
+        'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
         'remember_token' => Str::random(10),
     ];
+    // return [
+    //     'name' => 'Usman Iqbal',
+    //     'phone' => '923347272969',
+    //     'type' => 'admin',
+    //     'password' => 'password', // password
+    //     'remember_token' => Str::random(10),
+    // ];
 });

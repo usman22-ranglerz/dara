@@ -6,10 +6,11 @@ use App\Timestamps;
 use Carbon\Carbon;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use ProfUsman\MonitorOperators\Traits\Monitorable;
 
 class User extends Authenticatable
 {
-    use Notifiable , Timestamps;
+    use Notifiable , Timestamps , Monitorable;
 
     const ADMIN_TYPE = 'admin';
     /**
@@ -47,5 +48,10 @@ class User extends Authenticatable
     public function getPaidAtAttribute()
     {
         return Carbon::parse($this->attributes['paid_at'])->format('d-M-y');
+    }
+
+    public function getOperatorIdAttribute()
+    {
+        return auth()->id();
     }
 }

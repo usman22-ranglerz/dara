@@ -1,0 +1,38 @@
+{
+    "name": "prof-usman/monitor-operators",
+    "description": "Monitors all activities of operators like who is updating, creating or soft deleting etc",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Usman Iqbal",
+            "email": "usman22.cs@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "keywords": [
+        "activity monitoring",
+        "operators monitoring",
+        "activity",
+        "monitoring",
+        "soft delete monitoring",
+        "update monitoring"
+    ],
+    "autoload": {
+        "psr-4": {
+            "ProfUsman\\MonitorOperators\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+          "providers": [
+            "ProfUsman\\MonitorOperators\\MonitorOperatorsServiceProvider"
+          ],
+          "aliases": {
+            "MonitorOperators": "ProfUsman\\MonitorOperators\\Facades\\MonitorOperatorsFacade"
+          }
+        }
+    }
+}

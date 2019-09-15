@@ -1,5 +1,7 @@
 <?php
 
+use App\User;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -33,6 +35,14 @@ Route::group(['prefix' => 'admin' , 'middleware' => ['admin']] , function(){
 	Route::post('/projects/create', 'ProjectController@store')->name('projects.store');
 
 	Route::get('/reports', 'ProjectController@index')->name('projects.index');
+	
+	Route::group(['prefix' => 'monitor'] , function(){
+		Route::get('/' , function(){
+			// MonitorJar::test();
+			$user = User::find(11);
+			dd($user->m_updated());
+		});
+	});
 });
 
 
