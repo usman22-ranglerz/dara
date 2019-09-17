@@ -1,7 +1,5 @@
 # Dara
 
-A Task
-
 # Installation
  * Clone this Repository
  * `cd` into it

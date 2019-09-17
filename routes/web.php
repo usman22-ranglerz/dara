@@ -36,11 +36,15 @@ Route::group(['prefix' => 'admin' , 'middleware' => ['admin']] , function(){
 
 	Route::get('/reports', 'ProjectController@index')->name('projects.index');
 	
+	Route::get('/get-users', function(){
+		$data['users'] = User::paginate(10);
+		return view('users.get-users')->with($data);
+	})->name('users.get');
 	Route::group(['prefix' => 'monitor'] , function(){
 		Route::get('/' , function(){
 			// MonitorJar::test();
-			$user = User::find(10);
-			dd($user->delete_operations());
+			$user = User::find(2);
+			dd($user->m_updated());
 		});
 	});
 });

@@ -53,4 +53,19 @@ trait Monitorable
 
 		return $this;
 	}
+
+	public function m_created_by()
+	{
+		return $this->hasOne(MonitorOperator::class , 'operator_id');
+	}
+
+	public function m_updated_by()
+	{
+		return $this->hasOne(MonitorOperator::class , 'operator_id');
+	}
+
+	// public function m_created_by()
+	// {
+	// 	return $this->morphOne(MonitorOperator::class , 'operateable');
+	// }
 }

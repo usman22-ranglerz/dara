@@ -1722,7 +1722,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/prof-usman/monitor-operators",
-                "reference": "338a2c5b3940a5d0e2a397b05405f145a9ac4a17"
+                "reference": "5fb438f35ab8f5dbcc0c246ce6f85fe45989929c"
             },
             "require": {
                 "php": ">=5.4.0"
@@ -3815,16 +3815,16 @@
         },
         {
             "name": "yajra/laravel-datatables-html",
-            "version": "v4.13.0",
+            "version": "v4.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yajra/laravel-datatables-html.git",
-                "reference": "57351be6bbb2ca537c22353217cd068aeeb327e3"
+                "reference": "4c8ea734a264b1ba459a54e51bc546f6719e0295"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yajra/laravel-datatables-html/zipball/57351be6bbb2ca537c22353217cd068aeeb327e3",
-                "reference": "57351be6bbb2ca537c22353217cd068aeeb327e3",
+                "url": "https://api.github.com/repos/yajra/laravel-datatables-html/zipball/4c8ea734a264b1ba459a54e51bc546f6719e0295",
+                "reference": "4c8ea734a264b1ba459a54e51bc546f6719e0295",
                 "shasum": ""
             },
             "require": {
@@ -3871,7 +3871,7 @@
                 "jquery",
                 "laravel"
             ],
-            "time": "2019-09-14T03:38:01+00:00"
+            "time": "2019-09-16T05:29:20+00:00"
         },
         {
             "name": "yajra/laravel-datatables-oracle",
@@ -5649,8 +5649,8 @@
             "authors": [
                 {
                     "name": "Arne Blankerts",
-                    "email": "arne@blankerts.de",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "arne@blankerts.de"
                 }
             ],
             "description": "A small library for converting tokenized PHP source code into XML and potentially other formats",

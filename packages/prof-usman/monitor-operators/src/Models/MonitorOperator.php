@@ -18,4 +18,14 @@ class MonitorOperator extends Model
 	    $this->table = config('monitor_operators.table_name' , 'monitor_operators');
 	    parent::__construct($attributes);
 	}
+
+	public function operator()
+	{
+		return $this->belongsTo(\App\User::class , 'operator_id');
+	}
+
+	// public function operateable()
+	// {
+	// 	return $this->morphTo();
+	// }
 }
